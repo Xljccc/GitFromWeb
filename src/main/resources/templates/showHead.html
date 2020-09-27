@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--插入方式引入head-->
+    <div th:insert="~{head :: copy}"></div>
+    <!--替换的方式,将head中的内容替换本div-->
+    <div th:replace="~{head :: copy}"></div>
+    <!--只包含内容,将head中的内容显示-->
+    <div th:include="~{head :: copy}"></div>
+</body>
+</html>
